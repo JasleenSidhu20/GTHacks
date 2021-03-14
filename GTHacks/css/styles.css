@@ -483,6 +483,10 @@ mark,
   border-radius: 50%;
 }
 
+.img-rounded-bigger {
+  border-radius: 20%;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
