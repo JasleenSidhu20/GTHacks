@@ -90,10 +90,10 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Moods</h2>
                     <h3 class="section-subheading text-muted">How are you feeling right now?</h3>
-                    <button onclick="myFunction()">Click Me</button>
+                    <!-- <button onclick="myFunction()">Click Me</button>
 
-                    <div id="myDIV">
-                      This is my DIV element.
+                    <div class="text-muted" id="myDIV">
+                      My message
                     </div>
                     <script>
                         function myFunction() {
@@ -104,7 +104,7 @@
                                     x.style.display = "none";
                                     }
                            }
-                       </script>
+                       </script> -->
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
@@ -117,7 +117,23 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Anxious</div>
-                              <!--  <div class="portfolio-caption-subheading text-muted">Illustration</div>  -->
+                                <div class="portfolio-caption-subheading text-muted">
+                                    <button class="portfolio-caption-subheading text-muted" onclick="myFunction()">Click Me</button>
+
+                                <!--    <div class="text-muted" id="myAnx">
+                                        My message
+                                    </div> -->
+                                    <script>
+                                        function myFunction() {
+                                            var x = document.getElementById("myAnx");
+                                            if (x.style.display === "none"){
+                                                x.style.display = "block";
+                                            } else {
+                                                x.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,9 +145,14 @@
                                 </div>
                                 <img class="img-fluid" src="assets/img/portfolio/frustrated_-_thunderstorm_1.png" alt="" />
                             </a>
+
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Frustrated</div>
-                            <!--    <div class="portfolio-caption-subheading text-muted">Graphic Design</div> -->
+                                <div class="portfolio-caption-subheading text-muted" id="myAnx">
+
+                                        My message
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,6 +214,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <!-- About-->
         <section class="page-section" id="about">
