@@ -9997,6 +9997,12 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.page-section h2.section-heading-special {
+  color: #7A6594;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .page-section h3.section-subheading {
   font-size: 1rem;
   font-weight: 400;

@@ -125,7 +125,9 @@
                                     </div> -->
                                     <script>
                                         function myFunction() {
-                                            var x = document.getElementById("myAnx");
+                                            const anx_mood = "Anxious";
+                                            document.getElementById("myAnx").innerHTML = anx_mood;
+                                            x = document.getElementById("myAnx");
                                             if (x.style.display === "none"){
                                                 x.style.display = "block";
                                             } else {
@@ -148,11 +150,6 @@
 
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Frustrated</div>
-                                <div class="portfolio-caption-subheading text-muted" id="myAnx">
-
-                                        My message
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,6 +210,10 @@
                         </div>
                     </div>
                 </div>
+                    <h2 class="section-heading text-uppercase"><br>Current Mood: </h2>
+                    <!--<body onload="myFunction()"> -->
+                    <h2 class="section-heading-special text-uppercase"><span id="myAnx"></span></h2>
+                    <!--</body> -->
             </div>
         </div>
         </section>
